@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Inicio de header**/
+
+.cajaEncabezado{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 163px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cajaEncabezado div{
+    width: 365px;
+    height: 96px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.logoHiper{
+    text-decoration: none;
+}
+
+.logoPrincipal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #5D66DE;
+    border: 0px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 244px;
+    height: 96px;
+}
+
+nav{
+    width: 50%;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar li{
+    list-style: none;
+    font-family: 'Inter';
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navBarActiva{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+    text-decoration-line: underline;
+}
+
+
+/** Fin de header**/
+/**Inicio de mail**/
+
+.imagenPortada{
+    width: 100%;
+    height: 242px;
+}
+
+.tituloPage{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 15px;
+
+display: flex;
+align-items: center;
+
+color: #000000;
+}
+
+.textoDesc{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;;
+
+    color: #000000;
+    margin: 15px;
+    
+}
+
+.imagenesServicios{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* align-content: space-evely; */
+    width: 100%;
+}
+
+
+/** Fin main**/
+/**Inicio Pie de Pagina**/
+
+.cajaPieDePagina{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 105px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redesDireccion{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cajaPieDePagina div a{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.cajaPieDePagina div a{
+    text-decoration: none;
+}
+
+
+/**Fin Pie de Pagina**/
