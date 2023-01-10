@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Estudio Dignity</title>
         <link rel="shortcut icon" href="../assets/img/Logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
 
-        <header class="cajaEncabezado"><!--Encabezado-->
-            <div>
+        <header class="cajaEncabezado container-fluid row d-felx justify-content-evenly align-items-center m-0"><!--Encabezado-->
+            <div class="col-3">
                 <a href="../index.html" class="logoHiper">
                     <img src="../assets/img/Logo.png" alt="Logo">
                 </a>
@@ -19,69 +20,77 @@
                     <h1 class="logoPrincipal">Estudio<br> Dignity & Asoc.</h1>
                 </a>
             </div>
-            
-            <nav><!--navegacion-->
-                <ul class="navBar">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li class="navBarActiva"><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./clientes.html">Clientes</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+            <div class="col-1"></div>
+            <nav class="col-4"><!--navegacion-->
+                <ul class="navBar row align-items-center">
+                    <li class="col"><a href="../index.html">Inicio</a></li>
+                    <li class="navBarActiva col fw-semibold"><a href="./nosotros.html">Nosotros</a></li>
+                    <li class="col"><a href="./servicios.html">Servicios</a></li>
+                    <li class="col"><a href="./clientes.html">Clientes</a></li>
+                    <li class="col"><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
 
 
-        <main><!--Informacion Principal-->
+        <main class="container"><!--Informacion Principal-->
             <div>
-                <img class="imagenPortada" src="../assets/img/PortadaNosotros.jpg" alt="Portada">
+                <img class="imagenPortada mb-2" src="../assets/img/PortadaNosotros.jpg" alt="Portada">
             </div>
-            <section><!--seccion importante-->
+            <section class="m-2"><!--seccion importante-->
                 <section>
                     <h2 class="tituloPage">
                     Nuestro Equipo
                     </h2>
 
                 </section>
-                <div class="imagenesServicios">
-                    <img src="../assets/img/Jane Cooper1.jpg" alt="Servicios"><!--Imagen-->
-                    <div>Jane Cooper<br>Director</div>
-                    <img src="../assets/img/Esther Howard2.jpg" alt="Servicios"><!--Imagen-->
-                    <div>Esther Howard<br>Gerente</div>
-                    <img src="../assets/img/Martin Gomez3.jpg" alt="Servicios"><!--Imagen-->
-                    <div>Martin Gomez<br>Gerente</div>
-                    <img src="../assets/img/Luz Lupiano4.jpg" alt="Servicios"><!--Imagen-->
-                    <div>Luz Lupiano<br>Gerente</div>
+                <div class="imagenesServicios d-flex row justify-content-center pt-1">
+                    <div class="col-3 row d-felx justify-content-center">
+                        <img class="rounded-5" src="../assets/img/Jane Cooper1.jpg" alt="Servicios"><!--Imagen-->
+                        <p class="row justify-content-center text-center">Jane Cooper<br>Director</p>
+                    </div>
+                    <div class="col-3 row d-felx justify-content-center">
+                        <img class="rounded-5" src="../assets/img/Esther Howard2.jpg" alt="Servicios"><!--Imagen-->
+                        <p class="row justify-content-center text-center">Esther Howard<br>Gerente</d></p>
+                    </div>
+                    <div class="col-3 row d-felx justify-content-center">
+                        <img class="rounded-5" src="../assets/img/Martin Gomez3.jpg" alt="Servicios"><!--Imagen-->
+                        <p class="row justify-content-center text-center">Martin Gomez<br>Gerente</p>
+                    </div>
+                    <div class="col-3 row d-felx justify-content-center">
+                        <img class="rounded-5" src="../assets/img/Luz Lupiano4.jpg" alt="Servicios"><!--Imagen-->
+                        <p class="row justify-content-center text-center">Luz Lupiano<br>Gerente</p>
+                    </div>
                 </div>
             </section>
         </main>
 
-        <footer class="cajaPieDePagina"><!--Pie de Pagina-->
-            <div class="boxAddress">
+        <footer class="cajaPieDePagina container-fluid row d-felx justify-content-center align-items-center m-0"><!--Pie de Pagina-->
+            <div class="col-4">
                 <a href="https://www.google.com.ar/maps">
                     <img src="../assets/img/Home Address.jpg" alt="Ubicacion">
-                    <h3 class="redesDireccion">
+                    <h3 class="redesDireccion m-0">
                         Calle Siempreviva  742, Capital Federal, Argentina
                     </h3>
                 </a>
             </div>
-            <div class="">
-                <a href="https://facebook.com/">
+            <div class="col-3">
+                <a href="https://facebook.com/" class="align-items-center justify-content-end">
                     <img src="../assets/img/Facebook.png" alt="Facebook">
-                    <h3 class="redesDireccion">
+                    <h3 class="redesDireccion m-0">
                         Estrudio Dignity
                     </h3>
                 </a>
             </div>
-            <div class="">
-                <a href="https://twitter.com/">
+            <div class="col-3">
+                <a href="https://twitter.com/" class="align-items-center justify-content-end">
                     <img src="../assets/img/Twitter.png" alt="Twitter">
-                    <h3 class="redesDireccion">
+                    <h3 class="redesDireccion m-0">
                         @DignityEstudio
                     </h3>
                 </a>
             </div>
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html>
