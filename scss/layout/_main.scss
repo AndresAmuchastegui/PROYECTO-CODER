@@ -1,0 +1,78 @@
+.imagenPortada{
+    width: 100%;
+    height: 230px;
+}
+
+.tituloPage{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 15px;
+}
+
+.textoDesc{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;;
+    color: #000000;
+    margin: 15px;
+}
+
+.container-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "item1 item2 item3 item4 item5"
+    "item6 item7 item8 item9 item10"
+    ;
+    gap: 10px;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+.item5{
+    grid-area: item5;
+}
+
+.item6{
+    grid-area: item6;
+}
+
+.item7{
+    grid-area: item7;
+}
+
+.item8{
+    grid-area: item8;
+}
+
+.item9{
+    grid-area: item9;
+}
+
+.item10{
+    grid-area: item10;
+}

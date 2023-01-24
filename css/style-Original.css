@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Inicio de header**/
+
+.cajaEncabezado{ 
+    background-color: #d9d9d9;
+    /* width: 100%; */
+    height: 150px;
+    padding: 30px 0px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.cajaEncabezado div{
+    /* height: 96px; */
+    display: flex;
+    justify-content: end;
+
+}
+
+.logoHiper{
+    text-decoration: none;
+}
+
+.logoPrincipal{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #5D66DE;
+    border: 0px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 244px;
+    height: 96px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar li{
+    list-style: none;
+    font-family: 'Inter';
+}
+
+.navBar li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+.navBarActiva{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500; 
+    line-height: 15px;
+    text-decoration-line: underline;
+}
+
+/** Fin de header**/
+/**Inicio de main**/
+
+.imagenPortada{
+    width: 100%;
+    height: 230px;
+}
+
+.tituloPage{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 15px;
+display: flex;
+align-items: center;
+color: #000000;
+margin: 15px;
+}
+
+.textoDesc{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;;
+
+    color: #000000;
+    margin: 15px;
+    
+}
+
+.container-grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "item1 item2 item3 item4 item5"
+    "item6 item7 item8 item9 item10"
+    ;
+    gap: 10px;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+.item5{
+    grid-area: item5;
+}
+
+.item6{
+    grid-area: item6;
+}
+
+.item7{
+    grid-area: item7;
+}
+
+.item8{
+    grid-area: item8;
+}
+
+.item9{
+    grid-area: item9;
+}
+
+.item10{
+    grid-area: item10;
+}
+/** Fin main**/
+/**Inicio Pie de Pagina**/
+
+.cajaPieDePagina{
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redesDireccion{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+    text-transform: capitalize;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.cajaPieDePagina div a{
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.cajaPieDePagina div a{
+    text-decoration: none;
+}
+
+
+/**Fin Pie de Pagina**/
