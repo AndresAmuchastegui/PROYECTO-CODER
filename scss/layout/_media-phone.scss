@@ -1,7 +1,29 @@
-@media (max-width:360){
-    footer{
-        .redesDireccion {
-            display: none;
-        }
-    };
+@media (max-width: 991.98px) {
+
+    .nav-item{
+        text-align: right;
+    }
+
+    .card{
+        --bs-card-spacer-y: 0.25rem;
+    }
+
+    .card-text{
+        font-size: 30%;
+        
+    }
+
+    .textoDesc {
+        font-size: 12px;
+    }
+
+    .tituloPage {
+        font-size: 20px;
+    }
+
+//     footer{
+//         .redesDireccion {
+//             display: none;
+//         }
+//     };
 }

@@ -1,15 +1,19 @@
+.contenidoPrincipal{
+    // width: 90%;
+    box-shadow: 1px 6px 10px 5px rgba(12, 29, 91, 0.2);
+}
+
 .imagenPortada{
     width: 100%;
-    height: 230px;
 }
 
 .tituloPage{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 15px;
-    display: flex;
+    font-size: 2rem;
+    // line-height: 15px;
+    // display: flex;
     align-items: center;
     color: #000000;
     margin: 15px;
@@ -26,15 +30,18 @@
 }
 
 .container-grid{
+    display: flex;
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: repeat(2, 50%);
+    justify-content: space-between;
     grid-template-areas: 
     "item1 item2 item3 item4 item5"
     "item6 item7 item8 item9 item10"
     ;
-    gap: 10px;
+    gap: 9px;
 }
 
 .item1{

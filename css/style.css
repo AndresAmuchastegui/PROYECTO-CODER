@@ -3,61 +3,39 @@
   padding: 0;
   box-sizing: border-box; }
 
-.cajaEncabezado {
+header {
   background-color: #d9d9d9;
-  height: 150px;
-  padding: 30px 0px; }
-  .cajaEncabezado div {
-    display: flex;
-    justify-content: end; }
+  width: 100%;
+  height: 130px; }
+  header nav {
+    background-color: #d9d9d9; }
 
-.logoHiper {
-  text-decoration: none; }
+.nav-item {
+  width: 81px;
+  text-align: center; }
 
-.logoPrincipal {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  color: #5D66DE;
-  border: 0px solid #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  width: 244px;
-  height: 96px; }
+.navbar {
+  width: 80%; }
 
-.navBar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-  .navBar li {
-    list-style: none;
-    font-family: 'Inter'; }
-    .navBar li a {
-      text-decoration: none;
-      color: #000000;
-      font-size: 20px; }
+.navbar-nav {
+  align-items: end; }
+  .navbar-nav li a {
+    text-align: end; }
 
-.navbarActiva {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  line-height: 15px;
-  text-decoration-line: underline; }
+.active {
+  text-decoration: overline; }
+
+.contenidoPrincipal {
+  box-shadow: 1px 6px 10px 5px rgba(12, 29, 91, 0.2); }
 
 .imagenPortada {
-  width: 100%;
-  height: 230px; }
+  width: 100%; }
 
 .tituloPage {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 15px;
-  display: flex;
+  font-size: 2rem;
   align-items: center;
   color: #000000;
   margin: 15px; }
@@ -72,12 +50,15 @@
   margin: 15px; }
 
 .container-grid {
+  display: flex;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: repeat(2, 50%);
+  justify-content: space-between;
   grid-template-areas: "item1 item2 item3 item4 item5" "item6 item7 item8 item9 item10";
-  gap: 10px; }
+  gap: 9px; }
 
 .item1 {
   grid-area: item1; }
@@ -109,30 +90,30 @@
 .item10 {
   grid-area: item10; }
 
-.cajaPieDePagina {
+footer {
   background-color: #d9d9d9;
-  width: 100%;
-  height: 80px;
+  width: 100%; }
+
+footer h6 {
+  text-align: center;
+  padding-top: 5px;
+  margin-bottom: 0px; }
+
+.cajaPieDePagina {
+  height: 70px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center; }
-  .cajaPieDePagina div a {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    text-decoration: none; }
 
-.redesDireccion {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 15px;
-  text-transform: capitalize;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); }
-
-@media (max-width: 360) {
-  footer .redesDireccion {
-    display: none; } }
+@media (max-width: 991.98px) {
+  .nav-item {
+    text-align: right; }
+  .card {
+    --bs-card-spacer-y: 0.25rem; }
+  .card-text {
+    font-size: 30%; }
+  .textoDesc {
+    font-size: 12px; }
+  .tituloPage {
+    font-size: 20px; } }
