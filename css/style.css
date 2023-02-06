@@ -31,6 +31,10 @@ header {
 .imagenPortada {
   width: 100%; }
 
+.card {
+  --bs-card-spacer-y: 0.5rem;
+  --bs-card-spacer-x: 0.5rem; }
+
 .tituloPage {
   font-family: 'Inter';
   font-style: normal;
@@ -110,9 +114,10 @@ footer h6 {
   .nav-item {
     text-align: right; }
   .card {
-    --bs-card-spacer-y: 0.25rem; }
+    --bs-card-spacer-y: 0.14rem;
+    --bs-card-spacer-x: 0.14rem; }
   .card-text {
-    font-size: 30%; }
+    font-size: 17%; }
   .textoDesc {
     font-size: 12px; }
   .tituloPage {

@@ -7,6 +7,11 @@
     width: 100%;
 }
 
+.card{
+    --bs-card-spacer-y: 0.5rem;
+    --bs-card-spacer-x: 0.5rem;
+}
+
 .tituloPage{
     font-family: 'Inter';
     font-style: normal;
